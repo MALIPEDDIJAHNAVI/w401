@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: honeydew;
+    }
+    .container {
+        text-align: center;
+    }
+
+    .class {
+        display: inline-block;
+        width: 22%; 
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        text-align: center;
+    }
+
+    .class img {
+        width: 100%;
+        max-height: 150px; 
+    }
+
+    .class h2 {
+        font-size: 16px;
+        margin: 10px 0;
+    }
+
+    .select {
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+    }
+</style>
+
+
+
+
+<body>
+    <center style="margin-top: 30px;">
+    <h2>Welcome to our photography website</h2>
+    <h3>..Select your occasion that cherish your moments..</h3>
+    </center>
+
+    <div class = "container">
+        
+        <div class="class">
+            <h2>Birthday</h2>
+            <img src="https://images.unsplash.com/photo-1504437484202-613bb51ce359?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGtpZHMlMjBiaXJ0aGRheXxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80s" width="15%"  ><br>
+            <button class="select" onclick="selectTheItem('Birthday')" style="margin-right: 1000px;">Select</button>
+        </div>
+        <div class="class">
+            <h2>Half Saree Ceremony</h2>
+            <img src="https://cdn0.weddingwire.in/vendor/2315/3_2/960/jpg/file-1641718757059_15_272315-164171875835650.jpeg" width="15%"  ><br>
+            <button class="select" onclick="selectTheItem('Half Saree Ceremony')" style="margin-right: 1000px;">Select</button>
+        </div>
+        <div class="class">
+            <h2>Proposal</h2>
+            <img src="https://ryan-browne.co.uk/wp-content/uploads/2019/02/Swinton-Park-proposal-Photography.jpg" width="15%"  ><br>
+            <button class="select" onclick="selectTheItem('Proposal')" style="margin-right: 1000px;">Select</button>
+        </div>
+        <div class="class">
+            <h2>Engagement</h2>
+            <img src="https://image.wedmegood.com/resized/450X/uploads/project/87150/1689172781_0H3A0646.jpg" width="15%"  ><br>
+            <button class="select" onclick="selectTheItem('Engagement')" style="margin-right: 1000px;">Select</button>
+        </div>
+        <div class="class">
+            <h2>Haldi</h2>
+            <img src="https://images.pexels.com/photos/12153938/pexels-photo-12153938.jpeg?cs=srgb&dl=pexels-camera-treasure-12153938.jpg&fm=jpg" width="15%"  ><br>
+            <button class="select" onclick="selectTheItem('Haldi')" style="margin-right: 1000px;">Select</button>
+        </div>
+        <div class="class">
+            <h2>Mehandi</h2>
+            <img src="https://i.pinimg.com/736x/78/f1/f1/78f1f175adc140d9f858f0a54421050b.jpg" width="15%"  ><br>
+            <button class="select" onclick="selectTheItem('Mehandi')" style="margin-right: 1000px;">Select</button>
+        </div>
+        <div class="class">
+            <h2>Sangeet</h2>
+            <img src="https://images.news18.com/ibnlive/uploads/2021/12/ankita-lokhande-and-vicky-jain-pictures.jpg" width="15%"  ><br>
+            <button class="select" onclick="selectTheItem('Sangeet')" style="margin-right: 1000px;">Select</button>
+        </div>
+        <div class="class">
+            <h2>Bachelor Party</h2>
+            <img src="https://cdn0.weddingwire.com/article-gallery-o/00000/3_2/960/jpg/ww/krejci-friend-corykendraphotography-friendwed0317.jpeg" width="15%"  ><br>
+            <button class="select" onclick="selectTheItem('Bachelor Party')" style="margin-right: 1000px;">Select</button>
+        </div>
+        <div class="class">
+            <h2>Bride To Be</h2>
+            <img src="https://i.pinimg.com/736x/6b/5b/d8/6b5bd8c851b49f2bcf5fd45e1eed613f.jpg" width="15%"  ><br>
+            <button class="select" onclick="selectTheItem('Bride To Be')" style="margin-right: 1000px;">Select</button>
+        </div>
+        <div class="class">
+            <h2>Pre Wedding Shoot</h2>
+            <img src="https://imgmedia.lbb.in/media/2023/07/64ba509fcaed286aa8d090d2_1689931935431.jpg" width="15%"  ><br>
+            <button class="select" onclick="selectTheItem('Pre Wedding Shoot')" style="margin-right: 1000px;">Select</button>
+        </div>
+        <div class="class">
+            <h2>Wedding</h2>
+            <img src="https://images.travelandleisureasia.com/wp-content/uploads/sites/2/2020/11/Inside-image-Wedding-Photographers6.jpg" width="15%"  ><br>
+            <button class="select" onclick="selectTheItem('Wedding')" style="margin-right: 1000px;">Select</button>
+        </div>
+        <div class="class">
+            <h2>Reception</h2>
+            <img src="https://blog.venuelook.com/wp-content/uploads/2021/09/WEDDING-RECEPTION-STAGE-DECORATION-IDEAS-e1633065637183.jpg" width="15%"  ><br>
+            <button class="select" onclick="selectTheItem('Reception')" style="margin-right: 1000px;">Select</button>
+        </div>
+    </div>
+</body>
+<script>
+    var selectedItems = [];
+
+    function selectTheItem(itemName) {
+        if (!selectedItems.includes(itemName)) {
+            selectedItems.push(itemName);
+
+            alert("You selected: " + itemName);
+
+            var button = document.querySelector("button[data-item='" + itemName + "']");
+            button.textContent = "Selected";
+
+        } else {
+            alert("You have already selected this item: " + itemName);
+        }
+    }
+</script>
+
+
+</html>
